@@ -1,0 +1,55 @@
+{
+  "name": "smart-pinhole-workshop",
+  "version": "0.0.1",
+  "description": "Make a smart pinhole camera and learn Internet of Things basics.",
+  "main": "smart-pinhole-workshop.js",
+  "scripts": {
+    "start": "./smart-pinhole-workshop.js",
+    "test": "gulp"
+  },
+  "bin": {
+    "smart-pinhole-workshop": "./smart-pinhole-workshop.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CardboardIoT/smart-pinhole-workshop"
+  },
+  "keywords": [
+    "nodeschool",
+    "johnny-five",
+    "nodebot",
+    "internet of things",
+    "iot",
+    "workshop",
+    "workshopper",
+    "Pleasure in the work puts perfection in the job",
+    "smart devices",
+    "cardboardiot",
+    "mqtt"
+  ],
+  "contributors": [
+    "ezodude"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CardboardIoT/smart-pinhole-workshop/issues"
+  },
+  "dependencies": {
+    "async": "^1.4.2",
+    "chai": "^3.3.0",
+    "dnode": "^1.2.2",
+    "ioboard": "^3.0.0",
+    "johnny-five": "^0.8.106",
+    "proxyquire": "^1.7.3",
+    "sinon": "^1.17.1",
+    "workshopper": "^2.7.0",
+    "workshopper-exercise": "^2.5.0"
+  },
+  "optionalDependencies": {
+    "node-notifier": "^4.3.1"
+  },
+  "devDependencies": {
+    "gulp-jshint": "^1.11.2",
+    "gulp": "^3.9.0"
+  }
+}
