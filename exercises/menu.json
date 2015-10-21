@@ -1,6 +1,5 @@
 [
-  "Hello Messaging With MQTT",
-  "MQTT Can Topic Pub/Sub",
+  "Hello MQTT",
   "Do Blink Test",
   "Detect The Light",
   "Publish Light",
