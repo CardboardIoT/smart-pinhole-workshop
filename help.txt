@@ -1,0 +1,14 @@
+# Welcome to the smart-pinhole-workshop
+
+Let's learn ```core Internet of Things``` principles by hacking a ```Pinhole Camera```.
+
+Our Camera will sense brightness. And, inform us of the optimal film exposure time for a photo.
+
+**The workshop will pose a challenge, and test your solution.**
+
+Each of your solutions can be run directly as a `node` program.``
+
+You need an `Arduino UNO` and a `Pinhole Camera` for creating a real `Smart` Camera.
+
+- Arduino UNO - https://www.arduino.cc/en/Main/ArduinoBoardUno
+- Viddy Pinhole Camera - http://thepopuppinholecompany.com/viddy
