@@ -58,9 +58,11 @@ In this solution you will need to:
 
 ## Docs
 
-- MQTT - https://github.com/...
-- Publish - https://github.com/..#publish
-- Subscribe - https://github.com/..#subscribe
-- End - https://github.com/..#end
+- MQTT - https://github.com/mqttjs/MQTT.js
+- Publish - https://github.com/mqttjs/MQTT.js#publish
+- Subscribe - https://github.com/mqttjs/MQTT.js#subscribe
+- End - https://github.com/mqttjs/MQTT.js#end
+- Events - connect - https://github.com/mqttjs/MQTT.js#event-connect
+- Events - message - https://github.com/mqttjs/MQTT.js#event-message
 
 ---

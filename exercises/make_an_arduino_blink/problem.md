@@ -33,6 +33,10 @@ In this solution you will need to:
   })
 ```
 
+## Schematic
+
+- LED - https://github.com/rwaldron/johnny-five/blob/master/docs/led-blink.md
+
 ## Circuit diagram
 
 ```

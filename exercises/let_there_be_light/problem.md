@@ -13,38 +13,9 @@ __Write a program that measures and publishes photoresistor readings.__
 * Publish photoresistor readings on the **ciot/lightmeter/value** MQTT topic
 * Ensure published readings are retained for guaranteed pick up
 
-## Circuit diagram
+## Schematic
 
-```
-                 LED         330
-Pin 13  o-------->|---------/\/\/--------
-                                        |
-Pin 5   o----------------------         |
-                              |         |
-                       10k    |         |
-   +5   o----.--------/\/\/---.         |
-             |                |         |
-             |                |         |
-             |             .--|--|--.   |
-             |             | |  |   |   |
-             |   Button  --+-|  |   |   |
-             |             | |  |   |   |
-             |             '--|--|--'   |
-             |                |         |
-             |                ----------.---o  GND
-             __                         |
-            |   \                       |
-    A0  o---|    ) TMP36                |
-            |__ /                       |
-             |                          |
-             ---------------------------.
-                                        |
-                     Piezo              |
-                       _                |
-                     || ||              |
- Pin 9   o-----------|| ||---------------
-                     ||_||
-```
+- Sensor - Photoresistor - https://github.com/rwaldron/johnny-five/blob/master/docs/photoresistor.md
 
 ## Components
 
@@ -56,7 +27,6 @@ Pin 5   o----------------------         |
 
 - Board - https://github.com/rwaldron/johnny-five/wiki/Board
 - Sensor - https://github.com/rwaldron/johnny-five/wiki/Sensor#usage
-- Sensor - Photoresistor - https://github.com/rwaldron/johnny-five/blob/master/docs/photoresistor.md
 
 ## Hints
 
