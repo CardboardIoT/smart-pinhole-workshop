@@ -8,7 +8,7 @@ var client  = mqtt.connect({
 
 client.on('connect', function () {
   client.subscribe(helloTopic);
-  client.publish(helloTopic, "Hello mqtt");
+  client.publish(helloTopic, 'Hello mqtt');
 });
 
 client.on('message', function (topic, payload) {
