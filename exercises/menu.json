@@ -1,6 +1,6 @@
 [
   "Hello MQTT",
-  "Do Blink Test",
+  "Make An Arduino Blink",
   "Detect The Light",
   "Publish Light",
   "Messages For UI",
