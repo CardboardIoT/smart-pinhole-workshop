@@ -7,10 +7,10 @@ We will use our newly acquired `MQTT` & `johnny-five` skills.
 __Write a program that measures and publishes photoresistor readings.__
 
 * Use a photoresistor
-* Connect the photoresistor to **A2** 
+* Connect the photoresistor to **A0** 
 * Ensure we get sensor readings every 250 ms
 * Readings should be scaled between 0 and 1
-* Publish photoresistor readings on the **ciot/lightmeter/value** MQTT topic
+* Publish photoresistor readings on the **ciot/pinhole/light/value** MQTT topic
 * Ensure published readings are retained for guaranteed pick up
 
 ## Schematic
