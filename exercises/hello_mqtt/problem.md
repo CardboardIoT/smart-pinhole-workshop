@@ -2,28 +2,57 @@
 
 Let's learn ```core Internet of Things``` principles by hacking a ```Pinhole Camera```.
 
-Our smart Pinhole Hole Camera senses room brightness. This lets us know the correct film exposure time for taking a photo.
+Our Camera will sense brightness. And, inform us of the optimal film exposure time for a photo.
 
-We are going to cover:
-* Messaging with MQTT ... this is the backbone for any IOT installation.
-* Smartening your Thing with sensors and publishing data.
-* Connecting a real time UI to inform actions based on smart sensor data.
+**The workshop will pose a challenge, and test your solution.**
+
+Each of your solutions can be run directly as a `node` program.
 
 -------------------------------------------------------------------------------
 
-# Hello MQTT
+# Hello MQTT >> IOT Messaging...
 
-**Write a program subscribes and published to an MQTT TOPIC**
+MQTT (MQ Telemetry Transport) is a publish/subscribe messaging protocol.
 
+Useful for constrained devices and low-bandwidth, high-latency or unreliable networks.
+
+It has a small footprint. It is quickly becoming the de-facto IoT messaging standard.
+
+**Write a program to subscribe and publishe to an MQTT TOPIC**
+
+- Connect an MQTT client to `host: test.mosquitto.org`, and `port: 1883`.
+- On connect, use the client's `subscribe` method to subscribe to `Topic: ciot/hello/world`.
+- On connect, use the client's `publish` method to publish `Hello mqtt` to `Topic: ciot/hello/world`.
+- Listen to incoming messages.
+- Quit session after a message is received using the clients `end` method.
 
 ## For this you will need
 
+1. A directory for your answers and `cd` into it.
+2. Get mqtt from npm: `npm install mqtt`
+3. Add a file for your solution (e.g. 01-hello-mqtt.js)
 
-In all of your solutions you will need to:
+In this solution you will need to:
+
+- `require` the `mqtt` module
+- Use `mqtt.connect({..})` to connect to an MQTT server
+- Add callbacks to the client's **connect** & **message** events
+- Your solution goes inside the callbacks...
 
 
 ```js
-  //some code
+  var mqtt = require('mqtt');
+  var client  = mqtt.connect({
+    //host and port config here
+  });
+
+  client.on('connect', function () {
+    // Your solution here!
+  });
+
+  client.on('message', function (topic, payload) {
+    // Your solution here!
+  });
 ```
 
 
