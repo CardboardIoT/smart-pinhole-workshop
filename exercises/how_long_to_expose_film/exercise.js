@@ -10,9 +10,13 @@ var path = require('path')
 
 var notifier = require('../../lib/notifier')
 var broadcaster = require('../../lib/broadcaster')
+var serveUi = require('../../lib/serve-ui')
 
 // checks that the submission file actually exists
 exercise = filecheck(exercise)
+
+// Serve UI
+exercise.addProcessor(serveUi)
 
 // this actually runs the solution
 exercise.addProcessor(function (mode, callback) {
