@@ -44,7 +44,8 @@
     "proxyquire": "^1.7.3",
     "sinon": "^1.17.1",
     "workshopper": "^2.7.0",
-    "workshopper-exercise": "^2.5.0"
+    "workshopper-exercise": "^2.5.0",
+    "lightmeter": "CardboardIoT/experiment-lightmeter"
   },
   "optionalDependencies": {
     "node-notifier": "^4.3.1"
