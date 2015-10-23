@@ -41,13 +41,14 @@
     "dnode": "^1.2.2",
     "ioboard": "^3.0.0",
     "johnny-five": "^0.8.106",
+    "lightmeter": "CardboardIoT/experiment-lightmeter",
+    "lodash": "^3.10.1",
     "mqtt": "^1.4.3",
+    "node-notifier": "^4.3.1",
     "proxyquire": "^1.7.3",
     "sinon": "^1.17.1",
     "workshopper": "^2.7.0",
-    "workshopper-exercise": "^2.5.0",
-    "lightmeter": "CardboardIoT/experiment-lightmeter",
-    "node-notifier": "^4.3.1"
+    "workshopper-exercise": "^2.5.0"
   },
   "optionalDependencies": {
     "node-notifier": "^4.3.1"
