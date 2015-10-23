@@ -1,9 +1,7 @@
 [
   "Hello MQTT",
-  "Do Blink Test",
-  "Detect The Light",
-  "Publish Light",
-  "Receive Light",
+  "Make An Arduino Blink",
+  "Let There Be Light",
   "Messages For UI",
   "How Long to Film Expose",
   "Put It All Together"

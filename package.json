@@ -1,6 +1,6 @@
 {
   "name": "smart-pinhole-workshop",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Make a smart pinhole camera and learn Internet of Things basics.",
   "main": "smart-pinhole-workshop.js",
   "scripts": {
@@ -28,6 +28,7 @@
     "mqtt"
   ],
   "contributors": [
+    "andrewn",
     "ezodude"
   ],
   "license": "MIT",
@@ -45,7 +46,8 @@
     "sinon": "^1.17.1",
     "workshopper": "^2.7.0",
     "workshopper-exercise": "^2.5.0",
-    "lightmeter": "CardboardIoT/experiment-lightmeter"
+    "lightmeter": "CardboardIoT/experiment-lightmeter",
+    "node-notifier": "^4.3.1"
   },
   "optionalDependencies": {
     "node-notifier": "^4.3.1"
@@ -55,5 +57,7 @@
     "gulp": "^3.9.0",
     "jshint-stylish": "^0.4.0",
     "gulp-shell": "^0.2.5"
-  }
+  },
+  "homepage": "https://github.com/CardboardIoT/smart-pinhole-workshop",
+  "author": "Ezo Saleh <npm@ezosaleh.com> (http://ezosaleh.com)"
 }
