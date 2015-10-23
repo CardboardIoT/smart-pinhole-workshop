@@ -1,5 +1,6 @@
 var proxyquire = require('proxyquire')
 var mqtt = require('../../stubs/mqtt')
+var lightmeter = require('../../stubs/lightmeter')
 
 var expect = require('chai').expect
 var exercise = require('workshopper-exercise')()
@@ -15,7 +16,10 @@ exercise = filecheck(exercise)
 // this actually runs the solution
 exercise.addProcessor(function (mode, callback) {
   // includes the solution to run it
-  proxyquire(path.join(process.cwd(), exercise.args[0]), {'mqtt': mqtt})
+  proxyquire(path.join(process.cwd(), exercise.args[0]), {
+    'mqtt': mqtt,
+    'lightmeter': lightmeter
+  });
 
   setTimeout(function() {
     console.log('Please wait while your solution is tested...')
@@ -37,7 +41,7 @@ exercise.addVerifyProcessor(function (callback) {
     // mqtt client was connected to correct server
     var connect0 = mqtt.connect.getCall(0);
     expect(connect0.args[0].host, 'mqtt connection to wrong host').to.equal('test.mosquitto.org')
-    expect(connect0.args[0].port, 'mqtt connection to wrong port').to.equal(8080)
+    expect(connect0.args[0].port, 'mqtt connection to wrong port').to.equal('8080')
     expect(connect0.args[0].protocol, 'mqtt connection using wrong protocol').to.equal('ws')
 
     // client listens to two events
@@ -66,10 +70,19 @@ exercise.addVerifyProcessor(function (callback) {
     // client subscribes to 'ciot/pinhole/light/value' topic
     expect(subscribe0.args[0], 'client does not subscibe to correct topic').to.equal('ciot/pinhole/light/value')
 
+    expect(lightmeter.instances.length, 'expected 1 widget instance').to.equal(1);
+
     // emit some example messages
-    // TODO: Validate that the correct values are emitted to console.log
-    client.emit('message', 'ciot/pinhole/light/value', new Buffer('50'))
-    // TODO: expect the string '50' to be emitted
+    client.emit('message', 'ciot/pinhole/light/value', new Buffer('0.5'))
+    client.emit('message', 'ciot/pinhole/light/value', new Buffer('0.9'))
+
+    expect(lightmeter.instances[0].setLightLevel.called, 'setLightLevel should be called').to.be.true;
+
+    var setLightLevelCall0 = lightmeter.instances[0].setLightLevel.getCall(0);
+    expect(setLightLevelCall0.args[0], 'wrong argument value').to.equal('0.5');
+
+    var setLightLevelCall1 = lightmeter.instances[0].setLightLevel.getCall(1);
+    expect(setLightLevelCall1.args[0], 'wrong argument value').to.equal('0.9');
 
     broadcaster(exercise)(function (er) { notifier(exercise)(er, callback) })
   } catch(error) {
