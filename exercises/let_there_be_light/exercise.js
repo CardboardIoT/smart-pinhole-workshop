@@ -37,7 +37,12 @@ exercise.addVerifyProcessor(function (callback) {
   try {
 
     // mqtt client was connected
-    expect(mqtt.connect).to.be.called;
+    expect(mqtt.connect, 'no mqtt connection').to.be.called;
+
+    // mqtt client was connected to correct server
+    var connect0 = mqtt.connect.getCall(0);
+    expect(connect0.args[0].host, 'mqtt connection to wrong host').to.equal('test.mosquitto.org')
+    expect(connect0.args[0].port, 'mqtt connection to wrong port').to.equal('1883')
 
     // Board was created
     var io = five.stubs.firmata.singleton
