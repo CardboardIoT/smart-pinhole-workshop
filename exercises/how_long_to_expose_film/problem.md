@@ -42,3 +42,5 @@ Add 2 lighting conditions:
 You can pass an array of objects to `addLightingCondition()`.
 
 The widget includes an array of default conditions, try `console.log(Widget.defaults)`.
+
+Don't forget, you can run your program in the browser using `smart-pinhole-workshop run program.js` and loading the URL in your browser.
