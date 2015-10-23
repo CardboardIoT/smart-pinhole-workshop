@@ -1,7 +1,10 @@
 var mqtt = require('mqtt')
 var five = require('johnny-five')
 
-var client = mqtt.connect()
+var client = mqtt.connect({
+  host: 'test.mosquitto.org',
+  port: '1883'
+})
 var topic = 'ciot/pinhole/light/value'
 
 var board = new five.Board()
