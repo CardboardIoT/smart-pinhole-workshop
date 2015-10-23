@@ -4,8 +4,16 @@ var sinon = require("sinon");
 var instances = [];
 
 var WidgetMock = function () {
-  this.setLightLevel = sinon.spy();
-  instances.push(this);
+  var self = this;
+  self._conditions = [];
+  self.setLightLevel = sinon.spy();
+  self.addLightingCondition = function (c) {
+    if (!c.length) {
+      c = [c];
+    }
+    self._conditions = self._conditions.concat(c);
+  }
+  instances.push(self);
 };
 
 module.exports = {

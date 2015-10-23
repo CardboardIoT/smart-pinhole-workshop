@@ -1,31 +1,48 @@
+var mqtt = require('mqtt');
 var LightMeterWidget = require('lightmeter').Widget;
+
+var lightTopic = 'ciot/pinhole/light/value';
 
 var lightMeter = new LightMeterWidget();
 
 lightMeter.addLightingCondition({
-  id: 'direct-sun',
-  name: 'Direct sun',
+  name: 'Sunny',
   exposure: {
-    400: 1.3,
-    800: 1.6,
-    200: 2.5,
-    100: 5,
-    50: 10
+    400: 1.3
   },
-  min: 0.5,
-  max: 1
+  colour: {
+    start: '#f7ec86',
+    stop : '#fdc753'
+  },
+  sensorRange: [0.6, 1]
 });
 
 lightMeter.addLightingCondition({
-    id: 'indoors',
-    name: 'Indoors',
-    exposure: {
-      400: 180,
-      800: 90,
-      200: 300,
-      100: 600,
-      50: 1200
-    },
-    min: 0,
-    max: 0.5
-  });
+  name: 'Cloudy',
+  exposure: {
+    400: 180
+  },
+  colour: {
+    start: '#27bbf4',
+    stop : '#6340bc'
+  },
+  sensorRange: [0, 0.6]
+});
+
+
+var client  = mqtt.connect({
+  protocol: 'ws',
+  host: 'test.mosquitto.org',
+  port: '8080' // WebSocket port
+});
+
+client.on('connect', function () {
+  client.subscribe(lightTopic);
+});
+
+client.on('message', function (topic, payload) {
+  var message = payload.toString();
+  if (topic === lightTopic) {
+    lightMeter.setLightLevel(message);
+  }
+});
