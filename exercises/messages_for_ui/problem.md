@@ -1,0 +1,2 @@
+- instantiate LightMeterWidget()
+- call setLightLevel with a value of 0.5 on the instance

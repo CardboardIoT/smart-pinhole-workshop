@@ -1,0 +1,2 @@
+- check lighting conditions being added
+- set light level to trigger ui
