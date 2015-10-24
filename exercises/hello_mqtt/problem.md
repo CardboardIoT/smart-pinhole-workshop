@@ -6,7 +6,7 @@ Our Camera will sense brightness. And, inform us of the optimal film exposure ti
 
 **The workshop will pose a challenge, and test your solution.**
 
-Each of your solutions can be run directly as a `node` program.
+Each of your solutions will be run directly as a `node` program or loaded into a browser.
 
 -------------------------------------------------------------------------------
 
@@ -18,7 +18,7 @@ Useful for constrained devices and low-bandwidth, high-latency or unreliable net
 
 It has a small footprint. It is quickly becoming the de-facto IoT messaging standard.
 
-**Write a program to subscribe and publishe to an MQTT TOPIC**
+**Write a program to subscribe and publish to an MQTT topic**
 
 - Connect an MQTT client to `host: test.mosquitto.org`, and `port: 1883`.
 - On connect, use the client's `subscribe` method to subscribe to `Topic: ciot/hello/world`.
@@ -28,9 +28,9 @@ It has a small footprint. It is quickly becoming the de-facto IoT messaging stan
 
 ## For this you will need
 
-1. A directory for your answers and `cd` into it.
+1. A directory for your answers.
 2. Get mqtt from npm: `npm install mqtt`
-3. Add a file for your solution (e.g. 01-hello-mqtt.js)
+3. Add a file for your solution (e.g. answers/01-hello-mqtt.js)
 
 In this solution you will need to:
 
