@@ -19,6 +19,7 @@ exercise.addProcessor(serveUi)
 
 // this actually runs the solution
 exercise.addProcessor(function (mode, callback) {
+
   // includes the solution to run it
   proxyquire(path.join(process.cwd(), exercise.args[0]), {
     'mqtt': mqtt,
@@ -38,6 +39,11 @@ exercise.addProcessor(function (mode, callback) {
 // add a processor only for 'verify' calls
 exercise.addVerifyProcessor(function (callback) {
   try {
+
+    // expect that id is set in environment
+    expect(process.env.ID, 'No ID environment variable set. Did you set it with ID=<your-id>?').to.exist
+
+    var mqttTopicWithId = 'ciot/pinhole/' + process.env.ID + '/light/value';
 
     // mqtt client was connected
     expect(mqtt.connect, 'no mqtt connection').to.be.called;
@@ -71,8 +77,8 @@ exercise.addVerifyProcessor(function (callback) {
     // client subscribes and publishes only after connecting
     expect(onConnect.calledBefore(subscribe0), 'client unexpectedly subscribed before connecting').to.be.true
 
-    // client subscribes to 'ciot/pinhole/light/value' topic
-    expect(subscribe0.args[0], 'client does not subscibe to correct topic').to.equal('ciot/pinhole/light/value')
+    // client subscribes to 'ciot/pinhole/<id>/light/value' topic
+    expect(subscribe0.args[0], 'client does not subscibe to correct topic').to.equal(mqttTopicWithId)
 
     expect(lightmeter.instances.length, 'expected 1 widget instance').to.equal(1);
 

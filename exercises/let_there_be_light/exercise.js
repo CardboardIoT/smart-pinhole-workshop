@@ -36,6 +36,11 @@ exercise.addProcessor(function (mode, callback) {
 exercise.addVerifyProcessor(function (callback) {
   try {
 
+    // expect that id is set in environment
+    expect(process.env.ID, 'No ID environment variable set. Did you set it with ID=<your-id>?').to.exist
+
+    var mqttTopicWithId = 'ciot/pinhole/' + process.env.ID + '/light/value';
+
     // mqtt client was connected
     expect(mqtt.connect, 'no mqtt connection').to.be.called;
 
@@ -82,12 +87,14 @@ exercise.addVerifyProcessor(function (callback) {
         var mqttClient = mqtt.clients[0];
         var publish0 = mqttClient.publish.getCall(0);
 
-        expect(publish0.args[0], 'mqtt client does not publish to correct topic').to.equal('ciot/pinhole/light/value')
+        expect(publish0.args[0], 'mqtt client does not publish to correct topic').to.equal(mqttTopicWithId)
         expect(publish0.args[1], 'mqtt client does not publish to correct payload').to.not.be.null
         expect(publish0.args[2], 'mqtt client does not indicate reading is retained').to.not.be.null
 
-      } catch (er) {
-        return broadcaster(exercise)(er, function (er) { notifier(exercise)(er, callback) })
+      } catch (err) {
+        broadcaster(exercise)(err, function (er) {
+          notifier(exercise)(er, callback);
+        })
       }
     }, freq)
 
