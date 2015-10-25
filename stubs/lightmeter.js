@@ -1,5 +1,6 @@
 var inherits = require("util").inherits;
 var sinon = require("sinon");
+var lightmeter = require("lightmeter");
 
 var instances = [];
 
@@ -16,7 +17,9 @@ var WidgetMock = function () {
   instances.push(self);
 };
 
-module.exports = {
-  Widget: WidgetMock,
-  instances: instances
-};
+WidgetMock.defaults = lightmeter.Widget.defaults;
+
+lightmeter.instances = instances;
+lightmeter.Widget = WidgetMock;
+
+module.exports = lightmeter;
