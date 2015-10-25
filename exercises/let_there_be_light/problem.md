@@ -6,12 +6,13 @@ We will use our newly acquired `MQTT` & `johnny-five` skills.
 
 __Write a program that measures and publishes photoresistor readings.__
 
-* Use a photoresistor
-* Connect the photoresistor to **A0**
-* Ensure we get sensor readings every 250 ms
-* Readings should be scaled between 0 and 1
-* Publish photoresistor readings on the **ciot/pinhole/<id>/light/value** MQTT topic
-* Ensure published readings are retained for guaranteed pick up
+- Use a photoresistor
+- Connect the photoresistor to **A0**
+- Ensure we get sensor readings every 250 ms
+- Readings should be scaled between 0 and 1
+- Connect an MQTT client to `host: test.mosquitto.org`, and `port: 1883`
+- Publish photoresistor readings on the **ciot/pinhole/<id>/light/value** MQTT topic
+- Ensure published readings are retained for guaranteed pick up
 
 ## Unique ID for topic
 
