@@ -1,6 +1,9 @@
 var mqtt = require('mqtt');
 var LightMeterWidget = require('lightmeter').Widget;
 
+var id = process.env.ID;
+var lightTopic = 'ciot/pinhole/' + id + '/light/value';
+
 var lightTopic = 'ciot/pinhole/light/value';
 
 var lightMeter = new LightMeterWidget();

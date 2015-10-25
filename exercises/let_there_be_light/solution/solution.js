@@ -5,7 +5,10 @@ var client = mqtt.connect({
   host: 'test.mosquitto.org',
   port: '1883'
 })
-var topic = 'ciot/pinhole/light/value'
+
+var id = process.env.ID;
+
+var topic = 'ciot/pinhole/' + id + '/light/value'
 
 var board = new five.Board()
 

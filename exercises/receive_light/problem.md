@@ -10,11 +10,17 @@ __Write some browser code that subscribes to our MQTT photoresistor readings and
 
 * Connect to the `test.mosquitto.org` MQTT broker
 * Use the WebSocket port (8080) and the 'ws' protocol
-* Subscribe to readings on the **ciot/pinhole/light/value** MQTT topic
+* Subscribe to readings on the **ciot/pinhole/<your-id>/light/value** MQTT topic
+
+## Unique ID for topic
+
+As before, you should set an ID in the MQTT topic that's unique to your light sensor. Make sure you use the same ID as before!
+
+Set an environment variable of ID=<yourname> when you run your program. You can read this id in your program using `process.env.ID`.
 
 ## Running the solution
 
-Use `lightmeter --port 11686 program.js` to start a local server that you can open in your browser. Your browser code will be injected into the application so you can view it.
+Use `ID=<your-id> lightmeter --port 11686 program.js` to start a local server that you can open in your browser. Your browser code will be injected into the application so you can view it.
 
 Reloading the page will load the latest version of your code.
 

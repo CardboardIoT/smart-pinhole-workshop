@@ -13,8 +13,14 @@ var broadcaster = require('../../lib/broadcaster')
 // checks that the submission file actually exists
 exercise = filecheck(exercise)
 
+var topicId = 'unique-id-' + Math.round(Math.random() * 100000),
+    mqttTopicWithId = 'ciot/pinhole/' + topicId + '/light/value';
+
 // this actually runs the solution
 exercise.addProcessor(function (mode, callback) {
+
+  // Inject ID into subsmission
+  process.env.ID = topicId;
 
   // includes the solution to run it
   proxyquire(path.join(process.cwd(), exercise.args[0]), {
@@ -82,12 +88,14 @@ exercise.addVerifyProcessor(function (callback) {
         var mqttClient = mqtt.clients[0];
         var publish0 = mqttClient.publish.getCall(0);
 
-        expect(publish0.args[0], 'mqtt client does not publish to correct topic').to.equal('ciot/pinhole/light/value')
+        expect(publish0.args[0], 'mqtt client does not publish to correct topic').to.equal(mqttTopicWithId)
         expect(publish0.args[1], 'mqtt client does not publish to correct payload').to.not.be.null
         expect(publish0.args[2], 'mqtt client does not indicate reading is retained').to.not.be.null
 
-      } catch (er) {
-        return broadcaster(exercise)(er, function (er) { notifier(exercise)(er, callback) })
+      } catch (err) {
+        broadcaster(exercise)(err, function (er) {
+          notifier(exercise)(er, callback);
+        })
       }
     }, freq)
 

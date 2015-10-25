@@ -43,4 +43,4 @@ You can pass an array of objects to `addLightingCondition()`.
 
 The widget includes an array of default conditions, try `console.log(LightMeterWidget.defaults)`.
 
-Don't forget, you can run your program in the browser using `lightmeter --port 11686 program.js` and loading the URL in your browser.
+Don't forget, you can run your program in the browser using `ID=<your-id> lightmeter --port 11686 program.js` and loading the URL in your browser.
