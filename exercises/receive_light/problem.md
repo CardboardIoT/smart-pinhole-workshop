@@ -1,6 +1,6 @@
 YES! We sense and emit light readings.
 
-These readings help us take better pictures. But we need to know what they are.
+The readings will help us take better pictures. But we need to know what they are.
 
 Let's create a `LightMeter UI` to view our readings in real time.
 
