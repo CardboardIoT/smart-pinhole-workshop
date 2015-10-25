@@ -1,59 +1,38 @@
-Now that our light sensor is publishing values via MQTT, we can set up a user interface to subscribe to those readings.
+YES! We sense and emit light readings.
 
-MQTT brokers and clients can also publish and subscribe via WebSockets which makes it easy to make real-time interfaces that run in a web browser.
+These readings help us take better pictures. But we need to know what they are.
 
-Our MQTT client library also runs in the browser so we can use a lot of the same code.
+Let's create a `LightMeter UI` to view our readings in real time.
 
-We've already created a browser widget for you called LightMeter that you can include into the page using Browserify. This lets you use the familiar `require('module-name')` style of calls from node.js, but in the browser.
+`LightMeter` is a web UI widget. It visualizes light readings.
 
-__Write some browser code that subscribes to our MQTT photoresistor readings and sets the widget's light level.__
+This solution will run in the browser. So, we'll use `web sockets` to connect to the `MQTT` broker.
 
-* Connect to the `test.mosquitto.org` MQTT broker
-* Use the WebSocket port (8080) and the 'ws' protocol
-* Subscribe to readings on the **ciot/pinhole/<your-id>/light/value** MQTT topic
+__Write a program to visualize our photoresistor readings.__
+
+- Connect to the `test.mosquitto.org` MQTT broker
+- Use the WebSocket port (8080) and the 'ws' protocol
+- Subscribe to the **ciot/pinhole/<your-id>/light/value** MQTT topic
+- Create a new `LightMeterWidget` instance.
+- Set the `LightMeterWidget`'s light level every time a message is received.
 
 ## Unique ID for topic
 
-As before, you should set an ID in the MQTT topic that's unique to your light sensor. Make sure you use the same ID as before!
+As before, set an ID in the MQTT topic that's unique to your light sensor.
 
-Set an environment variable of ID=<yourname> when you run your program. You can read this id in your program using `process.env.ID`.
+**Make sure you use the same ID as before!**
 
-## Running the solution
-
-Use `ID=<your-id> lightmeter --port 11686 program.js` to start a local server that you can open in your browser. Your browser code will be injected into the application so you can view it.
-
-Reloading the page will load the latest version of your code.
+Set `ID=<yourname>` when you run your program. Read `ID` in your program using `process.env.ID`.
 
 ## For this you will need
 
+1. Get lightmeter from npm: `npm install lightmeter`
+
 In this solution you will need to:
 
-- Install the `lightmeter` npm module: `npm install cardboardiot/lightmeter`
-- `require` the `mqtt` module and `lightmeter` modules
-- Use `mqtt.connect({..})` to connect to an MQTT server
-- Add callbacks to the client's **connect** & **message** events
-- Instantiate the LightMeterWidget
-- Pass the light level reading using the widget's `setLightLevel()` method
-- Your solution goes inside the callbacks...
-
-```js
-  var mqtt = require('mqtt');
-  var LightMeterWidget = require('lightmeter').Widget;
-
-  var lightMeter = new LightMeterWidget();
-
-  var client  = mqtt.connect({
-    //host, port and protocol config here
-  });
-
-  client.on('connect', function () {
-    // Your solution here!
-  });
-
-  client.on('message', function (topic, payload) {
-    // Your solution here!
-  });
-```
+- `require` the `lightmeter` module
+- Instantiate a `LightMeter.Widget`
+- `LightMeter.setLightLevel` when a message arrives on the `mqtt` connection.
 
 ## Docs
 
