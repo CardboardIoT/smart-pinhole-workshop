@@ -2,7 +2,7 @@ A smart Pinhole Camera relies on sensors. This means we need to get comfortable 
 
 For this we'll use an `Arduino` and `johnny-five`.
 
-`johnny-five` is an api for working with Arduino and other rapid prototyping boards.
+`johnny-five` is an API for working with Arduino and other rapid prototyping boards.
 
 For our Hardware `Hello World` lets blink an LED.
 
