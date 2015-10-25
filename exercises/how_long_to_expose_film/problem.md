@@ -1,10 +1,16 @@
-Our LightMeter widget can use the light level reading to dynamically decide how long to leave the camera shutter open for. But since it's a web app, we can get it to do much more.
+Our camera is smart because it uses light readings to tell us how long to leave the camera shutter open for.
 
-Let's learn how to set exposure readings for different daylight conditions.
+That is the difference between a good and bad picture!
 
-__Extend your answer to the last problem to set 2 lighting condition readings.__
+Lets configure our `LightMeter UI` for different daylight conditions. We'll include the optimal film exposure for each condition.
 
-Using your solution to the previous problem, you can use the `addLightingCondition()` method to add lighting conditions. These allow you to map a light sensor reading to an exposure time.
+The `LightMeter UI` will change displayed exposure time when light conditions change.
+
+__Write a program that visualizes light conditions and optimal exposure time.__
+
+Based on your previous solution, Configure `LightMeterWidget` using the `addLightingCondition()` method.
+
+These allow you to map a light sensor reading to an exposure time.
 
 It takes an object of the following format:
 
