@@ -1,12 +1,10 @@
-Our camera is smart because it uses light readings to tell us how long to leave the camera shutter open for.
+Our camera is smart because it will tell us how long to leave the camera shutter open for.
 
-That is the difference between a good and bad picture!
+Lets configure our `LightMeter UI` with different daylight conditions. We'll include the best film exposure for each condition.
 
-Lets configure our `LightMeter UI` for different daylight conditions. We'll include the optimal film exposure for each condition.
+Now, the `LightMeter UI` changes exposure time for different light conditions.
 
-The `LightMeter UI` will change displayed exposure time when light conditions change.
-
-__Write a program that visualizes light conditions and optimal exposure time.__
+__Write a program that visualizes light conditions and best exposure time.__
 
 Based on your previous solution, Configure `LightMeterWidget` using the `addLightingCondition()` method.
 
