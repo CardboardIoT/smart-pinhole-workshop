@@ -13,14 +13,8 @@ var broadcaster = require('../../lib/broadcaster')
 // checks that the submission file actually exists
 exercise = filecheck(exercise)
 
-var topicId = 'unique-id-' + Math.round(Math.random() * 100000),
-    mqttTopicWithId = 'ciot/pinhole/' + topicId + '/light/value';
-
 // this actually runs the solution
 exercise.addProcessor(function (mode, callback) {
-
-  // Inject ID into subsmission
-  process.env.ID = topicId;
 
   // includes the solution to run it
   proxyquire(path.join(process.cwd(), exercise.args[0]), {
@@ -41,6 +35,11 @@ exercise.addProcessor(function (mode, callback) {
 // add a processor only for 'verify' calls
 exercise.addVerifyProcessor(function (callback) {
   try {
+
+    // expect that id is set in environment
+    expect(process.env.ID, 'No ID environment variable set. Did you set it with ID=<your-id>?').to.exist
+
+    var mqttTopicWithId = 'ciot/pinhole/' + process.env.ID + '/light/value';
 
     // mqtt client was connected
     expect(mqtt.connect, 'no mqtt connection').to.be.called;

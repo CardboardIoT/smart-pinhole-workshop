@@ -17,7 +17,15 @@ __Write a program that measures and publishes photoresistor readings.__
 
 The ID in the MQTT topic should be unique to your light sensor otherwise you could overwrite others' values.
 
-Make sure you set an environment variable of ID=<yourname> when you run your program. You can read this id in your program using `process.env.ID`.
+Make sure you set an environment variable of ID=<yourname> when you run your program and when you verify:
+
+    ID=<your-id> smart-pinhole-workshop verify program.js
+
+And:
+
+    ID=<your-id> node program.js
+
+You can read this id in your program using `process.env.ID`.
 
 ## Schematic
 

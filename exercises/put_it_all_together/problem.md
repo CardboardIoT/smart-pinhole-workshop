@@ -8,11 +8,11 @@ __Launch both apps to see the exposure time change with light levels.__
 
 In a new terminal window, run exercise 3. "Let there be light":
 
-    node 03_let_there_be_light
+    ID=<your-id> node 03_let_there_be_light
 
 Then, in this window run your program from the last exercise:
 
-    lightmeter --port 11686 program.js
+    ID=<your-id> lightmeter --port 11686 program.js
 
 Cover the sensor with your hand to see the value change in the web UI.
 
