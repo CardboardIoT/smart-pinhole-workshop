@@ -27,12 +27,12 @@ It takes an object of the following format:
 
 Add 2 lighting conditions:
 
-    name: Sunny
+    name: Direct sun
     ISO: 400, 1.3 seconds
     minimum light sensor: 0.6
     maximum light sensor: 1
 
-    name: Cloudy
+    name: Indoors
     ISO: 400, 180 seconds
     minimum light sensor: 0
     maximum light sensor: 0.6
@@ -41,6 +41,6 @@ Add 2 lighting conditions:
 
 You can pass an array of objects to `addLightingCondition()`.
 
-The widget includes an array of default conditions, try `console.log(Widget.defaults)`.
+The widget includes an array of default conditions, try `console.log(LightMeterWidget.defaults)`.
 
-Don't forget, you can run your program in the browser using `smart-pinhole-workshop run program.js` and loading the URL in your browser.
+Don't forget, you can run your program in the browser using `lightmeter --port 11686 program.js` and loading the URL in your browser.

@@ -14,7 +14,7 @@ __Write some browser code that subscribes to our MQTT photoresistor readings and
 
 ## Running the solution
 
-Use `smart-pinhole-workshop run program.js` to start a local server that you can open in your browser. Your code will be injected into the application so you can view it.
+Use `lightmeter --port 11686 program.js` to start a local server that you can open in your browser. Your browser code will be injected into the application so you can view it.
 
 Reloading the page will load the latest version of your code.
 

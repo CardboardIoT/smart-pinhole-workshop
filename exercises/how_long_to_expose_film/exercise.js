@@ -92,15 +92,17 @@ exercise.addVerifyProcessor(function (callback) {
     // Check conditions
     var conditions = lightmeter.instances[0]._conditions;
 
-    var sunny = lodash.find(conditions, { name: 'Sunny' });
-    expect(sunny, 'a condition called "Sunny" was not added').to.exist;
-    expect(sunny.exposure, 'sunny exposure values not correct').to.deep.equal({ 400: 1.3 });
-    expect(sunny.sensorRange, 'sunny sensorRange values not correct').to.deep.equal([0.6, 1]);
+    var sunny = lodash.find(conditions, { name: 'Direct sun' });
+    expect(sunny, 'a condition called "Direct sun" was not added').to.exist;
+    expect(sunny.exposure, 'Direct sun exposure object not found').to.exist;
+    expect(sunny.exposure['400'], 'Direct sun exposure value not correct').to.equal(1.3);
+    expect(sunny.sensorRange, 'Direct sun sensorRange values not correct').to.deep.equal([0.6, 1]);
 
-    var cloudy = lodash.find(conditions, { name: 'Cloudy' });
-    expect(cloudy, 'a condition called "Cloudy" was not added').to.exist;
-    expect(cloudy.exposure, 'cloudy exposure values not correct').to.deep.equal({ 400: 180 });
-    expect(cloudy.sensorRange, 'cloudy sensorRange values not correct').to.deep.equal([0, 0.6]);
+    var indoors = lodash.find(conditions, { name: 'Indoors' });
+    expect(indoors, 'a condition called "Indoors" was not added').to.exist;
+    expect(indoors.exposure, 'indoors exposure object not found').to.exist;
+    expect(indoors.exposure['400'], 'indoors exposure value not correct').to.equal(180);
+    expect(indoors.sensorRange, 'indoors sensorRange values not correct').to.deep.equal([0, 0.6]);
 
     broadcaster(exercise)(function (er) { notifier(exercise)(er, callback) })
   } catch(error) {
