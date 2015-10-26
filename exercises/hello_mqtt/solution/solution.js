@@ -3,7 +3,7 @@ var helloTopic = 'ciot/hello/world';
 
 var client  = mqtt.connect({
   host: 'test.mosquitto.org',
-  port: '1883'
+  port: 1883
 });
 
 client.on('connect', function () {

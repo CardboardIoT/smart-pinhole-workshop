@@ -22,11 +22,11 @@ As before, set an ID in the MQTT topic that's unique to your light sensor.
 
 **Make sure you use the same ID as before!**
 
-Set `ID=<yourname>` when you run your program. Read `ID` in your program using `process.env.ID`.
+Set **ID=<(twitter-handle)>** when you run your program. Read `ID` in your program using `process.env.ID`.
 
 ## For this you will need
 
-1. Get lightmeter from npm: `npm install lightmeter`
+1. Get lightmeter from npm: `npm install -g lightmeter`
 
 In this solution you will need to:
 

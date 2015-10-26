@@ -9,7 +9,7 @@ var lightMeter = new LightMeterWidget();
 var client  = mqtt.connect({
   protocol: 'ws',
   host: 'test.mosquitto.org',
-  port: '8080' // WebSocket port
+  port: 8080 // WebSocket port
 });
 
 client.on('connect', function () {

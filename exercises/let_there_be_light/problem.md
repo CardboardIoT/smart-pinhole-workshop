@@ -18,7 +18,7 @@ __Write a program that measures and publishes photoresistor readings.__
 
 The ID in the MQTT topic should be unique to your light sensor otherwise you could overwrite others' values.
 
-Make sure you set an environment variable of ID=<yourname> when you run your program and when you verify:
+Make sure you set an environment variable of **ID=<(twitter-handle)>** when you run your program and when you verify:
 
     ID=<your-id> smart-pinhole-workshop verify program.js
 

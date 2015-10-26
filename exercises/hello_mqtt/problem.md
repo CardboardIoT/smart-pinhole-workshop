@@ -20,7 +20,7 @@ It has a small footprint. It is quickly becoming the de-facto IoT messaging stan
 
 **Write a program to subscribe and publish to an MQTT topic**
 
-- Connect an MQTT client to `host: test.mosquitto.org`, and `port: 1883`.
+- Connect an MQTT client to `host: 'test.mosquitto.org'`, and `port: 1883`.
 - On connect, use the client's `subscribe` method to subscribe to `Topic: ciot/hello/world`.
 - On connect, use the client's `publish` method to publish `Hello mqtt` to `Topic: ciot/hello/world`.
 - Listen to incoming messages.

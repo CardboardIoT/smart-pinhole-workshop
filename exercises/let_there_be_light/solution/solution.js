@@ -3,7 +3,7 @@ var five = require('johnny-five')
 
 var client = mqtt.connect({
   host: 'test.mosquitto.org',
-  port: '1883'
+  port: 1883
 })
 
 var id = process.env.ID;

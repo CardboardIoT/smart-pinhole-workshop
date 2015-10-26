@@ -51,7 +51,7 @@ exercise.addVerifyProcessor(function (callback) {
     // mqtt client was connected to correct server
     var connect0 = mqtt.connect.getCall(0);
     expect(connect0.args[0].host, 'mqtt connection to wrong host').to.equal('test.mosquitto.org')
-    expect(connect0.args[0].port, 'mqtt connection to wrong port').to.equal('8080')
+    expect(connect0.args[0].port, 'mqtt connection to wrong port').to.equal(8080)
     expect(connect0.args[0].protocol, 'mqtt connection using wrong protocol').to.equal('ws')
 
     // client listens to two events
@@ -80,19 +80,19 @@ exercise.addVerifyProcessor(function (callback) {
     // client subscribes to 'ciot/pinhole/<id>/light/value' topic
     expect(subscribe0.args[0], 'client does not subscibe to correct topic').to.equal(mqttTopicWithId)
 
-    expect(lightmeter.instances.length, 'expected 1 widget instance').to.equal(1);
+    expect(lightmeter.instances.length, 'expected 1 widget instance').to.equal(1)
 
     // emit some example messages
-    client.emit('message', 'ciot/pinhole/light/value', new Buffer('0.5'))
-    client.emit('message', 'ciot/pinhole/light/value', new Buffer('0.9'))
+    client.emit('message', mqttTopicWithId, new Buffer('0.5'))
+    client.emit('message', mqttTopicWithId, new Buffer('0.9'))
 
     expect(lightmeter.instances[0].setLightLevel.called, 'setLightLevel should be called').to.be.true;
 
-    var setLightLevelCall0 = lightmeter.instances[0].setLightLevel.getCall(0);
-    expect(setLightLevelCall0.args[0], 'wrong argument value').to.equal('0.5');
+    var setLightLevelCall0 = lightmeter.instances[0].setLightLevel.getCall(0)
+    expect(setLightLevelCall0.args[0], 'wrong argument value').to.equal('0.5')
 
-    var setLightLevelCall1 = lightmeter.instances[0].setLightLevel.getCall(1);
-    expect(setLightLevelCall1.args[0], 'wrong argument value').to.equal('0.9');
+    var setLightLevelCall1 = lightmeter.instances[0].setLightLevel.getCall(1)
+    expect(setLightLevelCall1.args[0], 'wrong argument value').to.equal('0.9')
 
     broadcaster(exercise)(function (er) { notifier(exercise)(er, callback) })
   } catch(error) {

@@ -52,7 +52,7 @@ exercise.addVerifyProcessor(function (callback) {
     // mqtt client was connected to correct server
     var connect0 = mqtt.connect.getCall(0);
     expect(connect0.args[0].host, 'mqtt connection to wrong host').to.equal('test.mosquitto.org')
-    expect(connect0.args[0].port, 'mqtt connection to wrong port').to.equal('8080')
+    expect(connect0.args[0].port, 'mqtt connection to wrong port').to.equal(8080)
     expect(connect0.args[0].protocol, 'mqtt connection using wrong protocol').to.equal('ws')
 
     // client listens to two events
@@ -84,8 +84,8 @@ exercise.addVerifyProcessor(function (callback) {
     expect(lightmeter.instances.length, 'expected 1 widget instance').to.equal(1);
 
     // emit some example messages
-    client.emit('message', 'ciot/pinhole/light/value', new Buffer('0.5'))
-    client.emit('message', 'ciot/pinhole/light/value', new Buffer('0.9'))
+    client.emit('message', mqttTopicWithId, new Buffer('0.5'))
+    client.emit('message', mqttTopicWithId, new Buffer('0.9'))
 
     expect(lightmeter.instances[0].setLightLevel.called, 'setLightLevel should be called').to.be.true;
 

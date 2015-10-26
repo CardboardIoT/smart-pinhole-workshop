@@ -4,12 +4,10 @@ var LightMeterWidget = require('lightmeter').Widget;
 var id = process.env.ID;
 var lightTopic = 'ciot/pinhole/' + id + '/light/value';
 
-var lightTopic = 'ciot/pinhole/light/value';
-
 var lightMeter = new LightMeterWidget();
 
 lightMeter.addLightingCondition({
-  name: 'Sunny',
+  name: 'Direct sun',
   exposure: {
     400: 1.3
   },
@@ -21,7 +19,7 @@ lightMeter.addLightingCondition({
 });
 
 lightMeter.addLightingCondition({
-  name: 'Cloudy',
+  name: 'Indoors',
   exposure: {
     400: 180
   },
@@ -36,7 +34,7 @@ lightMeter.addLightingCondition({
 var client  = mqtt.connect({
   protocol: 'ws',
   host: 'test.mosquitto.org',
-  port: '8080' // WebSocket port
+  port: 8080 // WebSocket port
 });
 
 client.on('connect', function () {
