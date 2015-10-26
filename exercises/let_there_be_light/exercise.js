@@ -96,6 +96,7 @@ exercise.addVerifyProcessor(function (callback) {
         expect(publish0.args[1], 'mqtt client does not publish to correct payload').to.equal(flippedValue.toString())
         expect(publish0.args[2], 'mqtt client does not indicate reading is retained').to.not.be.null
 
+        broadcaster(exercise)(function (er) { notifier(exercise)(er, callback) })
       } catch (err) {
         broadcaster(exercise)(err, function (er) {
           notifier(exercise)(er, callback);
@@ -103,7 +104,6 @@ exercise.addVerifyProcessor(function (callback) {
       }
     }, freq)
 
-    broadcaster(exercise)(function (er) { notifier(exercise)(er, callback) })
   } catch (error) {
     broadcaster(exercise)(error, function (er) { notifier(exercise)(er, callback) })
   }
