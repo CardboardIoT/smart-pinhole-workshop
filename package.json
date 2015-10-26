@@ -37,8 +37,11 @@
   },
   "dependencies": {
     "async": "^1.4.2",
+    "babelify": "^6.4.0",
+    "brfs": "^1.4.1",
     "chai": "^3.3.0",
     "dnode": "^1.2.2",
+    "envify": "^3.4.0",
     "ioboard": "^3.0.0",
     "johnny-five": "^0.8.106",
     "lightmeter": "^1.0.0",
