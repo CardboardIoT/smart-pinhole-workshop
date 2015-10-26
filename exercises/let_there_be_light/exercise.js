@@ -78,7 +78,13 @@ exercise.addVerifyProcessor(function (callback) {
     expect(sensor.scale.calledWith(0, 1), 'sensor readings need to be scaled between 0 - 1').to.be.true
 
     //send random data to sensor
-    analogReadListener(random(600, 900))
+    var sensorValue = random(600, 900);
+    var scaledValue = sensorValue / 1023;
+
+    analogReadListener(sensorValue)
+
+    // Expect solution to flip value
+    var flippedValue = 1 - scaledValue;
 
     setTimeout(function () {
       try {
@@ -86,9 +92,8 @@ exercise.addVerifyProcessor(function (callback) {
         // client listens to two events
         var mqttClient = mqtt.clients[0];
         var publish0 = mqttClient.publish.getCall(0);
-
         expect(publish0.args[0], 'mqtt client does not publish to correct topic').to.equal(mqttTopicWithId)
-        expect(publish0.args[1], 'mqtt client does not publish to correct payload').to.not.be.null
+        expect(publish0.args[1], 'mqtt client does not publish to correct payload').to.equal(flippedValue.toString())
         expect(publish0.args[2], 'mqtt client does not indicate reading is retained').to.not.be.null
 
       } catch (err) {

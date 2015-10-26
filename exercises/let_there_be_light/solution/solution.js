@@ -21,8 +21,8 @@ board.on('ready', function() {
 
   photoresistor.scale(0, 1).on('data', function() {
     if(!this.value){ return; }
-
-    var value = this.value.toString()
+    // Flip value so that max brightness == 1
+    var value = (1 - this.value).toString()
     client.publish(topic, value, { retain: true })
   })
 

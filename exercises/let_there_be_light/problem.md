@@ -9,7 +9,7 @@ __Write a program that measures and publishes photoresistor readings.__
 - Use a photoresistor
 - Connect the photoresistor to **A0**
 - Ensure we get sensor readings every 250 ms
-- Readings should be scaled between 0 and 1
+- Readings should be scaled between 0 and 1, where 0 is darkness and 1 is brightness (NB: the opposite of how the resistor works)
 - Connect an MQTT client to `host: test.mosquitto.org`, and `port: 1883`
 - Publish photoresistor readings on the **ciot/pinhole/<id>/light/value** MQTT topic
 - Ensure published readings are retained for guaranteed pick up
@@ -37,6 +37,8 @@ You can read this id in your program using `process.env.ID`.
 - Photoresistor - http://node-ardx.org/electronics-primer#photoresistor
 
 > Produces a variable resistance dependant on the amount of incident light.
+
+The resistance goes *down* when the resistor receives more light and *up* as it receives less light.
 
 ## Docs
 
