@@ -1,6 +1,6 @@
 {
   "name": "smart-pinhole-workshop",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Make a smart pinhole camera and learn Internet of Things basics.",
   "main": "smart-pinhole-workshop.js",
   "scripts": {
