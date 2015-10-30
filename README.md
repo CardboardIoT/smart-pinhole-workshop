@@ -19,7 +19,7 @@ Each of your solutions can be run directly as a `node` program.
 
 But wire up an [Arduino UNO][2], connect the USB and you can see your solution run for real.
 
-For the `Pinhole Camera`, [either make your own]() or [get one from here][3].
+For the `Pinhole Camera`, [either make your own](3) or [get one from here][4].
 
 ## Exhaustive bill of materials
 
@@ -27,11 +27,11 @@ Here's the list of all the materials to run your solution 100% end to end.
 
 - LED - http://node-ardx.org/electronics-primer#led
 - Photoresistor - http://node-ardx.org/electronics-primer#photoresistor
-- Resistor - ...
-- Breadboard
-- 3 Jump wires
-- Arduino UNO
-- Pinhole Camera (make one / buy one)
+- Resistor - http://node-ardx.org/electronics-primer#resistor
+- Breadboard - http://node-ardx.org/electronics-primer#breadboard
+- 3 Jump wires - https://en.wikipedia.org/wiki/Jump_wire
+- [Arduino UNO](2)
+- Pinhole Camera - [make one](3) / [buy one](4)
 
 ## Pre-requisites for the Arduino
 
@@ -54,10 +54,6 @@ Tested with node.js v0.12. You may have problems with v4 and native modules.
 
 They try the upload process one more time.
 
-## What the solution looks like
-
-Pictures of the setup.
-
 ## Code style
 
 To move towards a consistent style for nodeschool projects we use the .jshintrc
@@ -73,4 +69,5 @@ gulp
 
 [1]: http://nodeschool.io/
 [2]: https://www.arduino.cc/en/Main/ArduinoBoardUno
-[3]: http://thepopuppinholecompany.com/viddy
+[4]: http://thepopuppinholecompany.com/viddy
+[3]: http://www.instructables.com/id/How-To-Make-A-Pinhole-Camera/
