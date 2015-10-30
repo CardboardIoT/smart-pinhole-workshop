@@ -9,13 +9,15 @@ smart-pinhole-workshop
 
 Learn __core Internet of Things__ principles by hacking a [__Pinhole Camera__](https://en.wikipedia.org/wiki/Pinhole_camera).
 
-Our Camera will sense brightness. And, inform us of the optimal film exposure time for a photo.
+We will sense brightness and create a real time UI to showcase the optimal film exposure time for a photo.
 
 **The workshop will pose a challenge, and test your solution.**
 
 Each of your solutions can be run directly as a `node` program.
 
 **To start fast, _NO_ Arduino OR Pinhole Camera is needed for this workshop.**
+
+Sample data is pushed through the solution to simulate the experience.
 
 But wire up an [Arduino UNO][2], connect the USB and you can see your solution run for real.
 
