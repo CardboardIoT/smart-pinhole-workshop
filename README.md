@@ -19,7 +19,7 @@ Each of your solutions can be run directly as a `node` program.
 
 But wire up an [Arduino UNO][2], connect the USB and you can see your solution run for real.
 
-For the `Pinhole Camera`, [either make your own](3) or [get one from here][4].
+For the `Pinhole Camera`, [either make your own][3] or [get one from here][4].
 
 ## Exhaustive bill of materials
 
@@ -31,7 +31,7 @@ Here's the list of all the materials to run your solution 100% end to end.
 - Breadboard - http://node-ardx.org/electronics-primer#breadboard
 - 3 Jump wires - https://en.wikipedia.org/wiki/Jump_wire
 - [Arduino UNO](2)
-- Pinhole Camera - [make one](3) / [buy one](4)
+- Pinhole Camera - [make one][3] / [buy one][4]
 
 ## Pre-requisites for the Arduino
 
