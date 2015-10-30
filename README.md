@@ -32,7 +32,7 @@ Here's the list of all the materials to run your solution 100% end to end.
 - Resistor - http://node-ardx.org/electronics-primer#resistor
 - Breadboard - http://node-ardx.org/electronics-primer#breadboard
 - 3 Jump wires - https://en.wikipedia.org/wiki/Jump_wire
-- [Arduino UNO](2)
+- [Arduino UNO][2]
 - Pinhole Camera - [make one][3] / [buy one][4]
 
 ## Pre-requisites for the Arduino
