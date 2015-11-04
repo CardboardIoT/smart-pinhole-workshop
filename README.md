@@ -41,16 +41,16 @@ Tested with node.js v0.12. You may have problems with v4 and native modules.
 
 ### Flash your Arduino with Standard Firmata:
 
-1 - Connect the Arduino UNO to your PC using the USB Cable
-2 - Open the Arduino IDE, select: File > Examples > Firmata > StandardFirmata
-3 - Click the "Upload" button.
-4 - The text "Done Uploading" will appear once the upload is complete.
+- Connect the Arduino UNO to your PC using the USB Cable
+- Open the Arduino IDE, select: File > Examples > Firmata > StandardFirmata
+- Click the "Upload" button.
+- The text "Done Uploading" will appear once the upload is complete.
 
 ### Having problems? Perhaps adjust one of the following.
 
 * Select : Tools > Board and ensure that "Arduino UNO" is selected.
 * Select : Tools > Serial Port and select another serial port.
-    ** On a Mac the correct port may look like "/dev/tty.usbmodem:1411" or "/dev/cu.usbmodem:1411".
+   On a Mac the correct port may look like "/dev/tty.usbmodem:1411" or "/dev/cu.usbmodem:1411".
 * Check the USB Cable is connected - consider also trying a different cable.
 * You can also try pressing the Reset Button on the UNO.
 
