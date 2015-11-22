@@ -9,13 +9,17 @@ smart-pinhole-workshop
 
 Learn __core Internet of Things__ principles by hacking a [__Pinhole Camera__](https://en.wikipedia.org/wiki/Pinhole_camera).
 
-We will sense brightness and create a real time UI to showcase the optimal film exposure time for a photo.
+We will sense brightness using [Johnny Five](http://johnny-five.io) and a cheap light sensor on the Arduino, push that data over the internet and create a real time UI to showcase the optimal film exposure time for a photo.
 
 ![Sensors, messaging, user interface ](docs/smart-pinhole-flow.svg)
 
 **The workshop will pose a challenge, and test your solution.**
 
-Each of your solutions can be run directly as a `node` program.
+You can use your favourite text editor to create a solution.
+
+Each of your solutions can be run directly as a `node` program like this:
+
+[![Running the workshop](https://asciinema.org/a/7j43i5cvd3upi90aagharrfcz.png)](https://asciinema.org/a/7j43i5cvd3upi90aagharrfcz?autoplay=1&speed=1.5)
 
 **To start fast, _NO_ Arduino OR Pinhole Camera is needed for this workshop.**
 
@@ -59,6 +63,10 @@ Tested with node.js v0.12. You may have problems with v4 and native modules.
 * You can also try pressing the Reset Button on the UNO.
 
 They try the upload process one more time.
+
+## Feedback
+
+We want feedback! [Let us know what you thought, good or bad](mailto:hello@cardboardiot.com?subject=Demo+workshop+feedback).
 
 ## Code style
 
