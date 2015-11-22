@@ -35,6 +35,8 @@ Here's the list of all the materials to run your solution 100% end to end.
 - [Arduino UNO][2]
 - Pinhole Camera - [make one][3] / [buy one][4]
 
+![Camera, arduino and lightmeter setup](smart-pinhole-camera-setup.gif)
+
 ## Pre-requisites for the Arduino
 
 Tested with node.js v0.12. You may have problems with v4 and native modules.
