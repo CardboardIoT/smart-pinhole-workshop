@@ -11,7 +11,7 @@ Learn __core Internet of Things__ principles by hacking a [__Pinhole Camera__](h
 
 We will sense brightness using [Johnny Five](http://johnny-five.io) and a cheap light sensor on the Arduino, push that data over the internet and create a real time UI to showcase the optimal film exposure time for a photo.
 
-![Sensors, messaging, user interface ](docs/smart-pinhole-flow.svg)
+![Sensors, messaging, user interface ](https://rawgit.com/CardboardIoT/smart-pinhole-workshop/master/docs/smart-pinhole-flow.svg)
 
 **The workshop will pose a challenge, and test your solution.**
 
