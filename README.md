@@ -35,7 +35,7 @@ Here's the list of all the materials to run your solution 100% end to end.
 - [Arduino UNO][2]
 - Pinhole Camera - [make one][3] / [buy one][4]
 
-![Camera, arduino and lightmeter setup](smart-pinhole-camera-setup.gif)
+![Camera, arduino and lightmeter setup](docs/smart-pinhole-camera-setup.gif)
 
 ## Pre-requisites for the Arduino
 
