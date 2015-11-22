@@ -11,6 +11,8 @@ Learn __core Internet of Things__ principles by hacking a [__Pinhole Camera__](h
 
 We will sense brightness and create a real time UI to showcase the optimal film exposure time for a photo.
 
+![Sensors, messaging, user interface ](docs/smart-pinhole-flow.svg)
+
 **The workshop will pose a challenge, and test your solution.**
 
 Each of your solutions can be run directly as a `node` program.
