@@ -12,9 +12,9 @@ smart-pinhole-workshop
 
 We want you to learn __core Internet of Things__ principles by discovery in one weekend. But normally the workshop takes 1 - 2 hours to complete.
 
-[Please let us know](mailto:hello@cardboardiot.com?subject=Demo+workshop+takes+too+long) if the workshop takes you longer than 3 hours to complete. We really want to make this a pleasant learning experience.
-
 We keep things simple. This means we will not hack the [__Pinhole Camera__][4] directly. Instead, the hardware can placed alongside the camera. Enough to showcase what a smart camera can do.
+
+[Please let us know](mailto:hello@cardboardiot.com?subject=Demo+workshop+takes+too+long) if the workshop takes you longer than 3 hours to complete. We really want to make this a pleasant learning experience.
 
 ### How smart?
 
