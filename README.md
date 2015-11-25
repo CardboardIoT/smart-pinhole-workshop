@@ -7,7 +7,17 @@ npm install -g smart-pinhole-workshop
 smart-pinhole-workshop
 ```
 
-Learn __core Internet of Things__ principles by hacking a [__Pinhole Camera__](https://en.wikipedia.org/wiki/Pinhole_camera).
+## Overview
+
+Our mission here is to learn __core Internet of Things__ principles by discovery. In a weekend at the most. The workshop normally takes 1 - 2 hours. 
+
+We will keep things simple. We will not hacking the [__Pinhole Camera__][4] directly. Instead, the hardware can placed alongside the camera. This is enough to showcase what a smart camera can do.
+
+**This the end result**
+
+![Camera, arduino and lightmeter setup](docs/smart-pinhole-camera-setup.gif)
+
+## How things fit together
 
 We will sense brightness using [Johnny Five](http://johnny-five.io) and a cheap light sensor on the Arduino, push that data over the internet and create a real time UI to showcase the optimal film exposure time for a photo.
 
@@ -40,8 +50,6 @@ Here's the list of all the materials to run your solution 100% end to end.
 - 3 Jump wires - https://en.wikipedia.org/wiki/Jump_wire
 - [Arduino UNO][2]
 - Pinhole Camera - [make one][3] / [buy one][4]
-
-![Camera, arduino and lightmeter setup](docs/smart-pinhole-camera-setup.gif)
 
 ## Pre-requisites for the Arduino
 
