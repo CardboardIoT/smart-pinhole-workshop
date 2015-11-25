@@ -21,7 +21,7 @@ Our objective is to figure out how bright a space is. Then use some basic calcul
 
 ![Camera, arduino and lightmeter setup](docs/smart-pinhole-camera-setup.gif)
 
-## How things fit together
+### How things fit together
 
 We will sense brightness using [Johnny Five](http://johnny-five.io) and a cheap light sensor on the Arduino, push that data over the internet and create a real time UI to showcase the optimal film exposure time for a photo.
 
