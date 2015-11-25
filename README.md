@@ -9,7 +9,7 @@ smart-pinhole-workshop
 
 ## Overview
 
-We want you to learn __core Internet of Things__ principles by discovery in one weekend. The workshop normally takes 1 - 2 hours to complete. 
+We want you to learn __core Internet of Things__ principles by discovery in one weekend. But normally the workshop takes 1 - 2 hours to complete.
 
 We keep things simple. This means we will not hack the [__Pinhole Camera__][4] directly. Instead, the hardware can placed alongside the camera. Enough to showcase what a smart camera can do.
 
