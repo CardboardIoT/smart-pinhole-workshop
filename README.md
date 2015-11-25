@@ -3,6 +3,7 @@
 ```shell
 # Install
 npm install -g smart-pinhole-workshop
+
 # Run
 smart-pinhole-workshop
 ```
