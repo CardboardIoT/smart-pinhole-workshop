@@ -9,11 +9,15 @@ smart-pinhole-workshop
 
 ## Overview
 
-Our mission here is to learn __core Internet of Things__ principles by discovery. In a weekend at the most. The workshop normally takes 1 - 2 hours. 
+We want you to learn __core Internet of Things__ principles by discovery in one weekend. The workshop normally takes 1 - 2 hours to complete. 
 
-We will keep things simple. We will not hacking the [__Pinhole Camera__][4] directly. Instead, the hardware can placed alongside the camera. This is enough to showcase what a smart camera can do.
+We keep things simple. This means we will not hack the [__Pinhole Camera__][4] directly. Instead, the hardware can placed alongside the camera. Enough to showcase what a smart camera can do.
 
-**This the end result**
+### How smart?
+
+Our objective is to figure out how bright a space is. Then use some basic calculations to tell a photographer how long the camera film should be exposed for.
+
+### The end result
 
 ![Camera, arduino and lightmeter setup](docs/smart-pinhole-camera-setup.gif)
 
