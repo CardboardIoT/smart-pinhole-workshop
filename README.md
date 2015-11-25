@@ -16,7 +16,7 @@ We keep things simple. This means we will not hack the [__Pinhole Camera__][4] d
 
 ### How smart?
 
-Our objective is to figure out how bright a space is. Then use some basic calculations to tell a photographer how long the camera film should be exposed for.
+Our objective is to detect the level of brighness in a space. Then use some basic calculations to tell a photographer how long the camera film should be exposed for.
 
 ### The end result
 
