@@ -3,13 +3,30 @@
 ```shell
 # Install
 npm install -g smart-pinhole-workshop
+
 # Run
 smart-pinhole-workshop
 ```
 
-Learn __core Internet of Things__ principles by hacking a [__Pinhole Camera__](https://en.wikipedia.org/wiki/Pinhole_camera).
+## Overview
 
-We will sense brightness using [Johnny Five](http://johnny-five.io) and a cheap light sensor on the Arduino, push that data over the internet and create a real time UI to showcase the optimal film exposure time for a photo.
+We want you to learn __core Internet of Things__ principles by discovery in one weekend. But normally the workshop takes 1 - 2 hours to complete.
+
+We keep things simple. This means we will not hack the [__Pinhole Camera__][4] directly. Instead, the hardware can placed alongside the camera. Enough to showcase what a smart camera can do.
+
+[Please let us know](mailto:hello@cardboardiot.com?subject=Demo+workshop+takes+too+long) if the workshop takes you longer than 3 hours to complete. We really want to make this a pleasant learning experience.
+
+### How smart?
+
+Our objective is to detect the level of brighness in a space. Then use some basic calculations to tell a photographer how long the camera film should be exposed for.
+
+### The end result
+
+![Camera, arduino and lightmeter setup](docs/smart-pinhole-camera-setup.gif)
+
+### How will it work?
+
+We will sense brightness using [Johnny Five](http://johnny-five.io) and a cheap light sensor on the Arduino. Then publish that data over the internet and create a real time UI to showcase the optimal film exposure time for a photo.
 
 ![Sensors, messaging, user interface ](https://rawgit.com/CardboardIoT/smart-pinhole-workshop/master/docs/smart-pinhole-flow.svg)
 
@@ -40,8 +57,6 @@ Here's the list of all the materials to run your solution 100% end to end.
 - 3 Jump wires - https://en.wikipedia.org/wiki/Jump_wire
 - [Arduino UNO][2]
 - Pinhole Camera - [make one][3] / [buy one][4]
-
-![Camera, arduino and lightmeter setup](docs/smart-pinhole-camera-setup.gif)
 
 ## Pre-requisites for the Arduino
 
