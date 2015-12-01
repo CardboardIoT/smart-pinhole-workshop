@@ -1,4 +1,4 @@
-**A [nodeschool][1] type workshop to create an Internet of Things Smart Pinhole Camera**
+**A [nodeschool][1] type workshop to learn how smart (iot) things work**
 
 ## General Prerequisites
 
@@ -19,7 +19,7 @@ smart-pinhole-workshop
 
 ## Overview
 
-We want you to learn __core Internet of Things__ principles by discovery in one weekend.
+The mission is to create a smart [__Pinhole Camera__][4] while covering __core Internet of Things__ principles.
 
 You can start hacking right away **_without_ an Arduino or a Pinhole Camera**.This way you can complete the challenges in 1 - 2 hours. 
 
