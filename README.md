@@ -1,4 +1,4 @@
-**A [nodeschool][1] type workshop to learn how smart (iot) things work.**
+**A [nodeschool][1] workshop to learn how smart (iot) things work.**
 
 ## General Prerequisites
 
