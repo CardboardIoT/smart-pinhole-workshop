@@ -27,7 +27,7 @@ Also, when you have all the bits & bobs you don't have to hack the [__Pinhole Ca
 
 [Do let us know](mailto:hello@cardboardiot.com?subject=problems) if you're having any problems. We really want to make this a pleasant learning experience.
 
-Coming soon is our first all in one DIY smart product kit. [Stay in touch to find when its ready](http://cardboardiot.com).
+Coming soon is our first all in one DIY smart product kit. [Stay in touch to find out when its ready](http://cardboardiot.com).
 
 ### How smart?
 
