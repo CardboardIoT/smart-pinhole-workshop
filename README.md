@@ -1,4 +1,4 @@
-**A [nodeschool][1] type workshop to learn how smart (iot) things work**
+**A [nodeschool][1] type workshop to learn how smart (iot) things work.**
 
 ## General Prerequisites
 
@@ -61,13 +61,13 @@ For the `Pinhole Camera`, [either make your own][3] or [get one from here][4].
 
 Here's the list of all the materials to run your solution 100% end to end.
 
-- LED - http://node-ardx.org/electronics-primer#led [buy][5]
-- Photoresistor - http://node-ardx.org/electronics-primer#photoresistor [buy][6]
-- Resistor - http://node-ardx.org/electronics-primer#resistor [buy][7]
-- Breadboard - http://node-ardx.org/electronics-primer#breadboard [buy][8]
-- 3 Jump wires - https://en.wikipedia.org/wiki/Jump_wire [buy][9]
-- [Arduino UNO][2] [buy][10]
-- Pinhole Camera - [make one][3] / [buy one][4]
+- LED - http://node-ardx.org/electronics-primer#led [[buy][5]]
+- Photoresistor - http://node-ardx.org/electronics-primer#photoresistor [[buy][6]]
+- Resistor - http://node-ardx.org/electronics-primer#resistor [[buy][7]]
+- Breadboard - http://node-ardx.org/electronics-primer#breadboard [[buy][8]]
+- 3 Jump wires - https://en.wikipedia.org/wiki/Jump_wire [[buy][9]]
+- [Arduino UNO][2] [[buy][10]]
+- Pinhole Camera - [make one][3] / [[buy one][4]]
 
 ## Pre-requisites for the Arduino
 
