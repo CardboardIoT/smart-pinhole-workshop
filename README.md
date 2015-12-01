@@ -106,6 +106,11 @@ npm install -g gulp
 gulp
 ```
 
+## Our thanks
+
+Thanks to the brilliant work of [@olizilla](https://github.com/olizilla), [@alanshaw](https://github.com/alanshaw) & [@achingbrain](https://github.com/achingbrain) on [tableflip/nodebot-workshop](https://github.com/tableflip/nodebot-workshop)
+
+You're workshopper gave us the perfect foundation to build on!
 
 [1]: http://nodeschool.io/
 [2]: https://www.arduino.cc/en/Main/ArduinoBoardUno
