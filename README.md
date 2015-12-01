@@ -25,7 +25,9 @@ You can start hacking right away. **You dont need an Arduino or a Pinhole Camera
 
 Also, when you have all the bits & bobs you don't have to hack the [__Pinhole Camera__][4] directly. The hardware can be placed alongside the camera. Enough to showcase what a smart camera can do.
 
-[Please let us know](mailto:hello@cardboardiot.com?subject=Demo+workshop+takes+too+long) if the workshop takes you longer than 3 hours to complete. We really want to make this a pleasant learning experience.
+As Cardboard IOT, we will be using this teaching format to bring you fun DIY smart product kits. [Register here to find out more](http://cardboardiot.com).
+
+[Do let us know](mailto:hello@cardboardiot.com?subject=problems) if you're having any problems with the workshop. We really want to make this a pleasant learning experience.
 
 ### How smart?
 
@@ -90,7 +92,7 @@ They try the upload process one more time.
 
 ## Feedback
 
-We want feedback! [Let us know what you thought, good or bad](mailto:hello@cardboardiot.com?subject=Demo+workshop+feedback).
+Again, we love feedback! [Let us know what you thought, good or bad](mailto:hello@cardboardiot.com?subject=Demo+workshop+feedback).
 
 ## Code style
 
