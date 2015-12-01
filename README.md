@@ -25,9 +25,9 @@ You can start hacking right away. **You dont need an Arduino or a Pinhole Camera
 
 Also, when you have all the bits & bobs you don't have to hack the [__Pinhole Camera__][4] directly. The hardware can be placed alongside the camera. Enough to showcase what a smart camera can do.
 
-As Cardboard IOT, we will be using this teaching format to bring you fun DIY smart product kits. [Register here to find out more](http://cardboardiot.com).
+[Do let us know](mailto:hello@cardboardiot.com?subject=problems) if you're having any problems. We really want to make this a pleasant learning experience.
 
-[Do let us know](mailto:hello@cardboardiot.com?subject=problems) if you're having any problems with the workshop. We really want to make this a pleasant learning experience.
+Coming soon is our first all in one DIY smart product kit. [Stay in touch to find when its ready](http://cardboardiot.com).
 
 ### How smart?
 
