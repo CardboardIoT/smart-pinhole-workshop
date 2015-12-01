@@ -21,9 +21,9 @@ smart-pinhole-workshop
 
 The mission is to create a smart [__Pinhole Camera__][4] while covering __core Internet of Things__ principles.
 
-You can start hacking right away **_without_ an Arduino or a Pinhole Camera**.This way you can complete the challenges in 1 - 2 hours. 
+You can start hacking right away. **You dont need an Arduino or a Pinhole Camera**. The challenges can be completed in 1 - 2 hours. 
 
-We aim to keep things simple even when you have all the bits & bobs. So, you will not hack the [__Pinhole Camera__][4] directly. Instead, the hardware can be placed alongside the camera. Enough to showcase what a smart camera can do.
+Also, when you have all the bits & bobs you don't have to hack the [__Pinhole Camera__][4] directly. The hardware can be placed alongside the camera. Enough to showcase what a smart camera can do.
 
 [Please let us know](mailto:hello@cardboardiot.com?subject=Demo+workshop+takes+too+long) if the workshop takes you longer than 3 hours to complete. We really want to make this a pleasant learning experience.
 
