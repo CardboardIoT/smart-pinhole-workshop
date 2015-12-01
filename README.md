@@ -1,4 +1,13 @@
-**A [nodeschool][1] type workshop to create an IoT Smart Pinhole Camera**
+**A [nodeschool][1] type workshop to create an Internet of Things Smart Pinhole Camera**
+
+## General Prerequisites
+
+* A working knowledge of JavaScript.
+* No knowledge of hardware/Arduino is assumed.
+* A Unix based environment - Mac OSX or a Linux flavour.
+* Node.js v0.12. - you may have problems with v4 & native modules.
+
+### Install & run
 
 ```shell
 # Install
@@ -10,9 +19,11 @@ smart-pinhole-workshop
 
 ## Overview
 
-We want you to learn __core Internet of Things__ principles by discovery in one weekend. But normally the workshop takes 1 - 2 hours to complete.
+We want you to learn __core Internet of Things__ principles by discovery in one weekend.
 
-We keep things simple. This means we will not hack the [__Pinhole Camera__][4] directly. Instead, the hardware can placed alongside the camera. Enough to showcase what a smart camera can do.
+You can start hacking right away **_without_ an Arduino or a Pinhole Camera**.This way you can complete the challenges in 1 - 2 hours. 
+
+We aim to keep things simple even when you have all the bits & bobs. So, you will not hack the [__Pinhole Camera__][4] directly. Instead, the hardware can be placed alongside the camera. Enough to showcase what a smart camera can do.
 
 [Please let us know](mailto:hello@cardboardiot.com?subject=Demo+workshop+takes+too+long) if the workshop takes you longer than 3 hours to complete. We really want to make this a pleasant learning experience.
 
@@ -38,7 +49,7 @@ Each of your solutions can be run directly as a `node` program like this:
 
 [![Running the workshop](https://asciinema.org/a/7j43i5cvd3upi90aagharrfcz.png)](https://asciinema.org/a/7j43i5cvd3upi90aagharrfcz?autoplay=1&speed=1.5)
 
-**To start fast, _NO_ Arduino OR Pinhole Camera is needed for this workshop.**
+**Again, to start fast _NO_ Arduino OR Pinhole Camera is needed for this workshop.**
 
 Sample data is pushed through the solution to simulate the experience.
 
@@ -50,17 +61,15 @@ For the `Pinhole Camera`, [either make your own][3] or [get one from here][4].
 
 Here's the list of all the materials to run your solution 100% end to end.
 
-- LED - http://node-ardx.org/electronics-primer#led
-- Photoresistor - http://node-ardx.org/electronics-primer#photoresistor
-- Resistor - http://node-ardx.org/electronics-primer#resistor
-- Breadboard - http://node-ardx.org/electronics-primer#breadboard
-- 3 Jump wires - https://en.wikipedia.org/wiki/Jump_wire
-- [Arduino UNO][2]
+- LED - http://node-ardx.org/electronics-primer#led [buy][5]
+- Photoresistor - http://node-ardx.org/electronics-primer#photoresistor [buy][6]
+- Resistor - http://node-ardx.org/electronics-primer#resistor [buy][7]
+- Breadboard - http://node-ardx.org/electronics-primer#breadboard [buy][8]
+- 3 Jump wires - https://en.wikipedia.org/wiki/Jump_wire [buy][9]
+- [Arduino UNO][2] [buy][10]
 - Pinhole Camera - [make one][3] / [buy one][4]
 
 ## Pre-requisites for the Arduino
-
-Tested with node.js v0.12. You may have problems with v4 and native modules.
 
 ### Flash your Arduino with Standard Firmata:
 
@@ -98,5 +107,11 @@ gulp
 
 [1]: http://nodeschool.io/
 [2]: https://www.arduino.cc/en/Main/ArduinoBoardUno
-[4]: http://thepopuppinholecompany.com/viddy
 [3]: http://www.instructables.com/id/How-To-Make-A-Pinhole-Camera/
+[4]: http://thepopuppinholecompany.com/viddy
+[5]: https://www.adafruit.com/products/299
+[6]: https://www.adafruit.com/products/161
+[7]: http://www.amazon.com/E-Projects-10k-Resistors-Watt-Pieces/dp/B00BWYS9BA
+[8]: https://www.adafruit.com/products/64
+[9]: http://www.amazon.com/Breadboard-Jumper-Wire-75pcs-pack/dp/B0040DEI9M
+[10]: https://www.adafruit.com/products/50
