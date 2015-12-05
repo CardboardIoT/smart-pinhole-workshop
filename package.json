@@ -1,7 +1,7 @@
 {
   "name": "smart-pinhole-workshop",
-  "version": "0.0.8",
-  "description": "Make a smart pinhole camera and learn Internet of Things basics.",
+  "version": "0.0.9",
+  "description": "A nodeschool workshop to learn how smart (iot) things work.",
   "main": "smart-pinhole-workshop.js",
   "scripts": {
     "start": "./smart-pinhole-workshop.js",
