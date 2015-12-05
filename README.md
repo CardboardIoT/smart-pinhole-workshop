@@ -5,7 +5,6 @@
 * A working knowledge of JavaScript.
 * No knowledge of hardware/Arduino is assumed.
 * A Unix based environment - Mac OSX or a Linux flavour.
-* Node.js v0.12. - you may have problems with v4 & native modules.
 
 ### Install & run
 
