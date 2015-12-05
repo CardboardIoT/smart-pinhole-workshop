@@ -43,7 +43,7 @@
     "dnode": "^1.2.2",
     "envify": "^3.4.0",
     "ioboard": "^3.0.0",
-    "johnny-five": "^0.8.106",
+    "johnny-five": "^0.9.11",
     "lightmeter": "^1.0.0",
     "lodash": "^3.10.1",
     "mqtt": "^1.4.3",
