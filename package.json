@@ -1,6 +1,6 @@
 {
   "name": "smart-pinhole-workshop",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "A nodeschool workshop to learn how smart (iot) things work.",
   "main": "smart-pinhole-workshop.js",
   "scripts": {
