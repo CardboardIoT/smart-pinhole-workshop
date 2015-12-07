@@ -13,8 +13,8 @@ __Write a program to visualize our photoresistor readings.__
 - Connect to the `test.mosquitto.org` MQTT broker
 - Use the WebSocket port (8080) and the 'ws' protocol
 - Subscribe to the **ciot/pinhole/<your-id>/light/value** MQTT topic
-- Create a new `LightMeterWidget` instance.
-- Set the `LightMeterWidget`'s light level every time a message is received.
+- Create a new `LightMeter.Widget` instance.
+- Set the `LightMeter.Widget`'s light level every time a message is received.
 
 ## Unique ID for topic
 
@@ -26,13 +26,13 @@ Set **ID=<(twitter-handle)>** when you run your program. Read `ID` in your progr
 
 ## For this you will need
 
-1. Get lightmeter from npm: `npm install -g lightmeter`
+1. Get lightmeter from npm: `npm install lightmeter`
 
 In this solution you will need to:
 
 - `require` the `lightmeter` module
-- Instantiate a `LightMeter.Widget`
-- `LightMeter.setLightLevel` when a message arrives on the `mqtt` connection.
+- Instantiate a `LightMeterWidget` i.e. `var widget = new LightMeter.Widget`
+- `widget.setLightLevel` when a message arrives on the `mqtt` connection.
 
 ## Docs
 

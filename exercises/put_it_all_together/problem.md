@@ -6,11 +6,15 @@ You then subscribed to that topic in a web browser and updated a widget containi
 
 __Launch both apps to see the exposure time change with light levels.__
 
-In a new terminal window, run exercise 3. "Let there be light":
+First install `lightmeter` globally to be able to run our UI independantly of the workshop.
+
+1. Globally install lightmeter: `npm install -g lightmeter`
+
+Then in a new terminal window, run exercise 3. "Let there be light":
 
     ID=<your-id> node 03_let_there_be_light
 
-Then, in this window run your program from the last exercise:
+And, in another window run your program from the last exercise:
 
     ID=<your-id> lightmeter --port 11686 program.js
 
